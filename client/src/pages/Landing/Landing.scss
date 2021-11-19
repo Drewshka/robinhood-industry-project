@@ -1,0 +1,11 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+.landing {
+    width: 100%;
+    margin: 8rem 0 6rem 0;
+
+    // @include flex (row, flex-start, center);
+}
