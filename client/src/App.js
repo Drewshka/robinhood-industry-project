@@ -22,6 +22,14 @@ function App() {
         <Header />
         <NTFContainer />
         <Carousel>
+          <div>
+            <h1>What is an NFT?</h1>
+            <p>Answer 1</p>
+            <p>Answer 2</p>
+            <p>Answer 3</p>
+            <p>Answer 4</p>
+            <button>Submit</button>
+          </div>
           <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
           <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
           <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
