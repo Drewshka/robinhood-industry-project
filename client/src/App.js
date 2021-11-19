@@ -11,12 +11,12 @@ function App() {
   return (
     <div
       className="App"
-      style={{
-        maxWidth: 1200,
-        marginLeft: "auto",
-        marginRight: "auto",
-        marginTop: 64,
-      }}
+      // style={{
+      //   maxWidth: 1200,
+      //   marginLeft: "auto",
+      //   marginRight: "auto",
+      //   marginTop: 64,
+      // }}
     >
       <Router>
         <Header />
