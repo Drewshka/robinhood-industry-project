@@ -5,8 +5,25 @@
 .announcement-bar {
   background-color: $neon;
   height: 211px;
-  &__text {
-    font-size: 46px;
-    padding-top: 70px;
+  padding-top: 100px;
+  padding-bottom: 450px;
+  // &__text {
+  //   font-size: 46px;
+  //   padding-top: 70px;
+  // }
+  &__twttr {
+    padding-right: 20px;
+  }
+  &__punk {
+    padding-left: 20px;
+  }
+  &__twttr-fact {
+    display: inline-block;
+    padding-top: 60px;
+    padding-right: 70px;
+  }
+  &__punk-fact {
+    display: inline-block;
+    padding-left: 70px;
   }
 }
