@@ -6,6 +6,7 @@ import Hero from "../../components/Hero/Hero";
 import FunFacts from "../../components/FunFacts/FunFacts";
 import Announcement from "../../components/Announcement/Announcement";
 
+
 export default function Landing() {
   return (
     <div className="landing">
