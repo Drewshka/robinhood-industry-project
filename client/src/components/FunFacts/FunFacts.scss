@@ -7,7 +7,9 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 479px;
+  height: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .fact-one {
@@ -17,7 +19,7 @@
   &__box {
     background-color: $factsbox;
     width: 374px;
-    height: 171px;
+    height: 80px;
   }
   &__info {
     align-items: center;

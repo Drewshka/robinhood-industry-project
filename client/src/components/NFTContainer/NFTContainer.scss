@@ -1,12 +1,18 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
-
+.title {
+  padding-top: 60px;
+}
+.info {
+  padding-top: 40px;
+}
 .card-container {
   margin-top: 10rem;
   height: 100%;
   padding: 200px 0;
 }
+
 .container {
   &__title-box {
     position: relative;
@@ -64,7 +70,6 @@
 
   &__title {
     text-align: center;
-    border-bottom: 0.1875rem solid black;
     margin: 0.9375rem 0.9375rem 1.875rem 0.9375rem;
     font-weight: 800;
     font-size: 1rem;
