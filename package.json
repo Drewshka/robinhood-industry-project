@@ -1,0 +1,24 @@
+{
+  "name": "robinhood-industry-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drewshka/robinhood-industry-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drewshka/robinhood-industry-project/issues"
+  },
+  "homepage": "https://github.com/Drewshka/robinhood-industry-project#readme",
+  "dependencies": {
+    "concurrently": "^6.4.0",
+    "express": "^4.17.1"
+  }
+}
