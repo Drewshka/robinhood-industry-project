@@ -1,29 +1,53 @@
 // import React from "react";
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import "./Carousel.scss";
+import "./Carousel.scss"; //will be added later
+import React, { useState, useEffect } from "react";
 
-class DemoCarousel extends Component {
-  render() {
-    return (
-      <Carousel>
-        <div>
-          <img src="assets/1.jpeg" />
-          <p className="legend">Legend 1</p>
-        </div>
-        <div>
-          <img src="assets/2.jpeg" />
-          <p className="legend">Legend 2</p>
-        </div>
-        <div>
-          <img src="assets/3.jpeg" />
-          <p className="legend">Legend 3</p>
-        </div>
-      </Carousel>
-    );
-  }
-}
+const Carousel = (props) => {
+  const { children } = props;
 
-ReactDOM.render(<DemoCarousel />, document.querySelector(".demo-carousel"));
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [length, setLength] = useState(children.length);
+
+  // Set the length to match current children from props
+  useEffect(() => {
+    setLength(children.length);
+  }, [children]);
+
+  const next = () => {
+    if (currentIndex < length - 1) {
+      setCurrentIndex((prevState) => prevState + 1);
+    }
+  };
+
+  const prev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prevState) => prevState - 1);
+    }
+  };
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel-wrapper">
+        {/* You can alwas change the content of the button to other things */}
+        <button onClick={prev} className="left-arrow">
+          &lt;
+        </button>
+        <div className="carousel-content-wrapper">
+          {/*...*/}
+          <div
+            className="carousel-content"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {children}
+          </div>
+        </div>
+        {/* You can alwas change the content of the button to other things */}
+        <button onClick={next} className="right-arrow">
+          &gt;
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Carousel;
