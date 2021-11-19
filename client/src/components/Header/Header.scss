@@ -1,0 +1,39 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  //   padding: 1rem;
+  @include flex(space-between, center, row);
+
+  &__container {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+
+    &-item {
+      list-style-type: none;
+      margin-right: 10px;
+    }
+  }
+
+  &__logo {
+    height: 5rem;
+    margin-left: 1rem;
+  }
+
+  &__h1 {
+    color: black;
+    margin: 0;
+  }
+
+  &__button {
+    margin-right: 1rem;
+    border-radius: 20px;
+    background-color: $primary;
+    color: $secondary2;
+    border: none;
+    padding: 5px 20px;
+  }
+}

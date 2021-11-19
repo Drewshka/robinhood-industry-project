@@ -1,8 +1,6 @@
 import React from "react";
 import "./Hero.scss";
 
-import React from "react";
-
 export default function Hero() {
   return (
     <div>
