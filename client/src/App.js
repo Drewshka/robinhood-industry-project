@@ -3,10 +3,10 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Landing from "./pages/Landing/Landing";
-import Hero from "./components/Hero/Hero";
 import Header from "./components/Header/Header";
-import Carousel from "./components/Carousel/Carousel";
-import NTFContainer from "./components/NFTContainer/NFTContainer";
+// import NTFContainer from "./components/NFTContainer/NFTContainer";
+// import Hero from "./components/Hero/Hero";
+// import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
     >
       <Router>
         <Header />
-        <NTFContainer />
-        <Carousel>
+        {/* <NTFContainer /> */}
+        {/* <Carousel>
           <div>
             <h1>What is an NFT?</h1>
             <p>Answer 1</p>
@@ -34,7 +34,7 @@ function App() {
           <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
           <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
           <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-        </Carousel>
+        </Carousel> */}
         <Switch>
           <Route
             exact
