@@ -2,11 +2,14 @@
 @use "../../styles/partials/mixins" as *;
 
 .footer {
-  background-color: red;
-  padding: 1rem;
+  background-color: black;
 
   &__h1 {
     color: black;
     margin: 0;
+  }
+
+  &__info {
+    width: 100%;
   }
 }
