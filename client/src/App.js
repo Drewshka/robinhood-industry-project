@@ -13,7 +13,7 @@ function App() {
     <div
       className="App"
       style={{
-        maxWidth: 1200,
+        // maxWidth: 1200,
         marginLeft: "auto",
         marginRight: "auto",
         marginTop: 64,
