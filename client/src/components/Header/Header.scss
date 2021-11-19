@@ -1,0 +1,12 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  background-color: green;
+  padding: 1rem;
+
+  &__h1 {
+    color: black;
+    margin: 0;
+  }
+}
