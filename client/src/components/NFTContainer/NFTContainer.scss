@@ -1,91 +1,85 @@
-@use '../../styles/partials/fonts' as *;
-@use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/variables' as *;
-
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .card-container {
-    margin-top: 10rem;
-    height: 100%;
+  margin-top: 10rem;
+  height: 100%;
+  padding: 200px 0;
 }
 .container {
-   
-    
-  
-    &__title-box {
-        position: relative;
-        height: 15.625rem;
-      
-        &-text {
-            position: absolute;
-            color: white;
-            top: 6.875rem;
-            left: 6.25rem;
-            font-size: 4.0625rem; 
-        }     
+  &__title-box {
+    position: relative;
+    height: 15.625rem;
+
+    &-text {
+      position: absolute;
+      color: white;
+      top: 6.875rem;
+      left: 6.25rem;
+      font-size: 4.0625rem;
     }
+  }
 }
 .card-container {
-  
+  @include flex(row, center, center);
+  margin: -0.625rem 0 0 0;
+  flex-wrap: wrap;
+
+  @include tablet {
     @include flex(row, center, center);
     margin: -0.625rem 0 0 0;
-    flex-wrap: wrap;
-
-    @include tablet {
-        @include flex(row, center, center);
-        margin: -0.625rem 0 0 0;
-    }
+  }
 }
 .card {
-    border-radius: .3125rem;
+  border-radius: 0.3125rem;
+  min-width: 15.625rem;
+  max-width: 15.625rem;
+  min-height: 21.875rem;
+  max-height: 23.125rem;
+  margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+
+  &-left {
+    background-color: $lightgreen;
+  }
+  &-center {
+    background-color: $orange;
+  }
+  &-right {
+    background-color: $pink;
+  }
+
+  @include tablet {
+    border-radius: 0.3125rem;
     min-width: 15.625rem;
     max-width: 15.625rem;
     min-height: 21.875rem;
     max-height: 23.125rem;
-    margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+    margin: 0 1.25rem 0 1.25rem;
+  }
 
-    &-left {
-        background-color: $lightgreen;
-    } 
-    &-center {
-        background-color: $orange;
-    } 
-    &-right {
-        background-color: $pink;
-    } 
+  &:hover {
+    opacity: 0.5;
+  }
 
-    @include tablet {
-        border-radius: .3125rem;
-        min-width: 15.625rem;
-        max-width: 15.625rem;
-        min-height: 21.875rem;
-        max-height: 23.125rem;
-        margin: 0 1.25rem 0 1.25rem;
-    }
+  &__title {
+    text-align: center;
+    border-bottom: 0.1875rem solid black;
+    margin: 0.9375rem 0.9375rem 1.875rem 0.9375rem;
+    font-weight: 800;
+    font-size: 1rem;
+  }
 
-    &:hover {
-        opacity: 0.5;
-    }
-
-    &__title {
-        text-align: center;
-        border-bottom: .1875rem solid black;
-        margin: .9375rem .9375rem 1.875rem .9375rem;
-        font-weight: 800;
-        font-size: 1rem;
-        }
-
-    &__list {
-        list-style: none;
-        text-align: center;
-        margin: .9375rem .9375rem .9375rem .9375rem;
-        font-weight: 300;
-        font-size: .9375rem;
-    }    
-    &__item {
-        padding: .9375rem 0 .9375rem 0;
-        margin: .9375rem 0 .9375rem 0;
-        background-color: beige;
-    }
-    
+  &__list {
+    list-style: none;
+    text-align: center;
+    margin: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    font-weight: 300;
+    font-size: 0.9375rem;
+  }
+  &__item {
+    padding: 0.9375rem 0 0.9375rem 0;
+    margin: 0.9375rem 0 0.9375rem 0;
+    background-color: beige;
+  }
 }
-

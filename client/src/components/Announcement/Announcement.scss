@@ -2,9 +2,11 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-.landing {
-  width: 100%;
-  margin: 0;
-
-  // @include flex (row, flex-start, center);
+.announcement-bar {
+  background-color: $neon;
+  height: 211px;
+  &__text {
+    font-size: 46px;
+    padding-top: 70px;
+  }
 }

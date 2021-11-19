@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Landing from "./pages/Landing/Landing";
+import Hero from "./components/Hero/Hero";
 import Header from "./components/Header/Header";
 import Carousel from "./components/Carousel/Carousel";
 import NTFContainer from "./components/NFTContainer/NFTContainer";

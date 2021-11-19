@@ -1,3 +1,26 @@
-.hero-container {
-  background-color: red;
+
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero-banner {
+  background-color: $neon;
+  height: 489px;
+}
+.hero-title {
+  font-size: 46px;
+  width: 549px;
+  padding-top: 174px;
+  padding-left: 90px;
+  font-weight: 700;
+}
+.hero-img {
+  width: fit-content;
+  padding-left: 461px;
+  margin-top: -100px;
 }
