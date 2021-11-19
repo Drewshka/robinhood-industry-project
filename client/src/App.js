@@ -1,19 +1,26 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import logo from './logo.svg';
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Landing from "./pages/Landing/Landing";
+
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
-
         <Switch>
-          {/* <Route path="/" exact component={WarehousesPage} />
-        <Route path="/inventory" component={InventoryPage} /> */}
+          <Route
+            exact
+            path="/landing"
+            render={(props) => {
+              return <Landing {...props} />;
+            }}
+          />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );
