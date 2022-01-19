@@ -1,0 +1,15 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+  background-color: black;
+
+  &__h1 {
+    color: black;
+    margin: 0;
+  }
+
+  &__info {
+    width: 100%;
+  }
+}
